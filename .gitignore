@@ -4,3 +4,6 @@ node_modules/
 *.tmp
 .DS_Store
 /.ux-review/
+
+# local-only background material (the original in-app tool)
+/reference/

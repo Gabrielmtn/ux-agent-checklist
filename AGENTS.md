@@ -41,7 +41,6 @@ client/panel.js                  the injected panel (plain JS, shadow root, no b
 checklists/*.json                checklist templates
 example-site/                    a practice site with deliberate UX problems
 test/*.tests.cjs                 node:test suites (named so a host project's Jest or Vitest won't pick them up)
-reference/                       the original in-app tool this grew out of; not loaded
 ```
 
 A new agent workflow is a new folder under `.agents/skills/<name>/` with the
@@ -95,4 +94,4 @@ runner, linter or bundler would pick up by default, and nothing written outside
 - A hosted or multi-user mode. The server listens on 127.0.0.1 for one reviewer.
 - Calling a model API from the kit. The agent is whatever the reviewer runs.
 - Auto-committing fixes. The reviewer commits.
-- The lint, screenshot-runner and demo packages described in `reference/PROMPT.md`.
+- A layout linter, a screenshot runner for every state, or a hosted demo.

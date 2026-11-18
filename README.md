@@ -231,6 +231,5 @@ npm run example   # the practice site with the panel
 | `client/panel.js` | The injected panel (plain JS, no build step) |
 | `checklists/` | Checklist templates |
 | `example-site/` | Practice site with deliberate UX problems |
-| `reference/` | The original in-app tool this grew out of, and its review |
 
 See [AGENTS.md](AGENTS.md) for how the pieces fit and the rules for changing them.
