@@ -1,0 +1,15 @@
+{
+  "title": "Checkout (example add-on list)",
+  "sections": [
+    {
+      "id": "checkout",
+      "title": "Checkout",
+      "items": [
+        { "id": "total-visible", "text": "The total, including shipping and tax, is visible before the last step" },
+        { "id": "guest", "text": "Buying without an account is possible, or the need for one is explained up front" },
+        { "id": "edit-cart", "text": "The cart can be changed without starting over" },
+        { "text": "Payment errors keep the rest of the form filled in", "hint": "No id given: the kit derives a stable one from the text." }
+      ]
+    }
+  ]
+}

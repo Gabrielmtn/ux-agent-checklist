@@ -1,0 +1,32 @@
+{
+  "name": "ux-review-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clone, point at your site, and walk through it with a chat panel wired to your coding agent and a checklist you can edit.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gabrielmtn/ux-agent-checklist.git"
+  },
+  "homepage": "https://github.com/Gabrielmtn/ux-agent-checklist#readme",
+  "type": "commonjs",
+  "bin": {
+    "ux-review": "bin/ux-review.js"
+  },
+  "scripts": {
+    "start": "node bin/ux-review.js up",
+    "up": "node bin/ux-review.js up",
+    "status": "node bin/ux-review.js status",
+    "stop": "node bin/ux-review.js stop",
+    "serve": "node bin/ux-review.js serve",
+    "inbox": "node bin/ux-review.js inbox",
+    "wait": "node bin/ux-review.js wait",
+    "reply": "node bin/ux-review.js reply",
+    "summary": "node bin/ux-review.js summary",
+    "install-skill": "node bin/ux-review.js install-skill",
+    "example": "node bin/ux-review.js serve --static example-site --port 3997",
+    "test": "node --test test/*.tests.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

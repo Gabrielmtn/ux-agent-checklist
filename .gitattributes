@@ -1,0 +1,3 @@
+# Keep GitHub's "Download ZIP" (and `git archive`) lean for people who drop the
+# kit into their project: the original reference material isn't needed to run it.
+reference/ export-ignore

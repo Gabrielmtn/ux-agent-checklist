@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brewly · Coffee subscriptions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- A small practice site with a few deliberate UX problems, so you can try
+       the kit before pointing it at your own site: `npm run example`. -->
+  <header class="top">
+    <a class="logo" href="/">Brewly</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/plans.html">Plans</a>
+      <a href="/missing-page">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Synergize your morning ritual</h1>
+      <p>Freshly roasted beans, delivered on your schedule.</p>
+      <div class="actions">
+        <a class="btn" href="/plans.html">See plans</a>
+        <a class="btn" href="#signup">Sign up</a>
+        <a class="btn" href="#">Learn more</a>
+      </div>
+    </section>
+
+    <section id="signup" class="card">
+      <h2>Get 20% off your first bag</h2>
+      <form id="signup-form" novalidate>
+        <input type="text" name="email" placeholder="Email">
+        <div class="check"><input type="checkbox" id="news"> <label for="news">Send me the occasional newsletter</label></div>
+        <button type="submit" class="icon-btn" aria-label="">→</button>
+        <p class="error" hidden>Invalid input.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p class="fine">© Brewly. Not a real company.</p></footer>
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.reset();
+      this.querySelector('.error').hidden = false;
+    });
+  </script>
+</body>
+</html>

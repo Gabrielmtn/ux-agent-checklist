@@ -1,0 +1,82 @@
+{
+  "title": "General UX walkthrough",
+  "sections": [
+    {
+      "id": "first-impression",
+      "title": "First impression",
+      "items": [
+        { "id": "purpose", "text": "Within five seconds it is clear what the site is and who it is for" },
+        { "id": "primary-action", "text": "The main action stands out and reads as the next step", "hint": "One primary button per view; everything else is quieter." },
+        { "id": "load-feel", "text": "The first screen loads without layout jumps or blank flashes" }
+      ]
+    },
+    {
+      "id": "navigation",
+      "title": "Navigation",
+      "items": [
+        { "id": "where-am-i", "text": "The current page is marked in the navigation" },
+        { "id": "back-out", "text": "Every page has a clear way back or out (no dead ends)" },
+        { "id": "links-say-where", "text": "Link and button labels say where they go or what they do" },
+        { "id": "not-found", "text": "A broken URL shows a helpful 404 with a way home" }
+      ]
+    },
+    {
+      "id": "forms",
+      "title": "Forms and input",
+      "items": [
+        { "id": "labels", "text": "Every field has a visible label (not only a placeholder)" },
+        { "id": "errors", "text": "Errors say what is wrong and how to fix it, next to the field" },
+        { "id": "keep-input", "text": "A failed submit keeps what was typed" },
+        { "id": "right-keyboard", "text": "Email, number and phone fields bring up the right mobile keyboard" }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "States and feedback",
+      "items": [
+        { "id": "loading", "text": "Anything slow shows that it is working" },
+        { "id": "empty", "text": "Empty lists and first-run screens explain what to do next" },
+        { "id": "success", "text": "Saving, sending and deleting confirm that they happened" },
+        { "id": "destructive", "text": "Destructive actions ask first or can be undone" }
+      ]
+    },
+    {
+      "id": "content",
+      "title": "Content and copy",
+      "items": [
+        { "id": "plain-words", "text": "Copy uses the reader's words, not internal jargon" },
+        { "id": "long-content", "text": "Long names, long words and translated text don't break the layout" },
+        { "id": "consistent-terms", "text": "The same thing has the same name everywhere" }
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "items": [
+        { "id": "keyboard", "text": "Everything works with the keyboard alone, in a sensible order" },
+        { "id": "focus-visible", "text": "Keyboard focus is always visible" },
+        { "id": "contrast", "text": "Text has enough contrast against its background (WCAG AA)" },
+        { "id": "targets", "text": "Click and tap targets are at least 24×24 px" },
+        { "id": "alt-text", "text": "Images that carry meaning have alt text" }
+      ]
+    },
+    {
+      "id": "responsive",
+      "title": "Responsive",
+      "items": [
+        { "id": "phone", "text": "At phone width nothing overflows sideways or gets cut off" },
+        { "id": "zoom", "text": "At 200% zoom the page still works" },
+        { "id": "touch", "text": "Nothing important depends on hover" }
+      ]
+    },
+    {
+      "id": "polish",
+      "title": "Visual polish",
+      "items": [
+        { "id": "alignment", "text": "Things that should line up do line up" },
+        { "id": "spacing", "text": "Spacing is consistent between similar elements" },
+        { "id": "dark-mode", "text": "Dark mode (if any) has no unthemed leftovers" }
+      ]
+    }
+  ]
+}

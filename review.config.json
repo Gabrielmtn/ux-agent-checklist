@@ -1,0 +1,12 @@
+{
+  "target": null,
+  "static": null,
+  "spa": false,
+  "port": 3997,
+  "checklists": ["checklists/default.json"],
+  "outDir": "review",
+  "names": {
+    "reviewer": "You",
+    "agent": "Agent"
+  }
+}

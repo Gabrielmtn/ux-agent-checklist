@@ -1,0 +1,6 @@
+# review output (per person, per session)
+/review/
+node_modules/
+*.tmp
+.DS_Store
+/.ux-review/
