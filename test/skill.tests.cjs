@@ -120,13 +120,13 @@ test('install-skill copies the skill into .agents/skills and .claude/skills, and
 test('every step file has the same shape', () => {
   const dir = path.join(ROOT, '.agents', 'skills', 'ux-walkthrough');
   const skill = fs.readFileSync(path.join(dir, 'SKILL.md'), 'utf8');
-  assert.match(skill, /^---\nname: ux-walkthrough\ndescription: .+\n---/);
+  assert.match(skill, /^---\r?\nname: ux-walkthrough\r?\ndescription: .+\r?\n---/);
   for (const step of ['intake', 'locate', 'judge', 'fix']) {
     const md = fs.readFileSync(path.join(dir, step + '.md'), 'utf8');
     assert.match(skill, new RegExp('\\[' + step + '\\.md\\]\\(' + step + '\\.md\\)'), 'SKILL.md links ' + step);
     assert.match(md, /\*\*CRITICAL:/, step + ' has a CRITICAL line');
     assert.match(md, /\*\*SCOPE:/, step + ' has a SCOPE line');
     assert.match(md, /## Prerequisites/, step + ' has prerequisites');
-    assert.match(md, /report\.md`?\n*$|## Step \d+: (Write|Append to) `report\.md`/m, step + ' ends by writing report.md');
+    assert.match(md, /## Step \d+: (Write|Append to) `report\.md`/, step + ' ends by writing report.md');
   }
 });
